@@ -19,13 +19,99 @@ import PriceIcn from '../src/assets/img/pricing/icons/price.svg';
 import CommunityIcn from '../src/assets/img/community/icons/community-icn.svg';
 import QuestionMarkIcn from '../src/assets/img/faq/icons/question-mark.svg';
 
-export const header = {
+interface Header {
+    logo: string;
+    btnLoginText: string;
+    btnSignupText: string;
+}
+
+interface NavItem {
+    name: string;
+    href: string;
+}
+
+interface Banner {
+    titlePart1: string;
+    titlePart2: string;
+    subtitle: string;
+    textBtn: string;
+    img: string;
+}
+
+interface About {
+    icon: string;
+    title: string;
+    subtitle1: string;
+    subtitle2: string;
+    link: string;
+}
+
+interface WorkoutProgram {
+    image: string;
+    name: string;
+}
+
+interface Workouts {
+    icon: string;
+    title: string;
+    programs: WorkoutProgram[];
+}
+
+interface PricingPlan {
+    name: string;
+    price: string;
+    list: { name: string }[];
+    delay: number;
+}
+
+interface Pricing {
+    icon: string;
+    title: string;
+    plans: PricingPlan[];
+}
+
+interface Testimonial {
+    image: string;
+    name: string;
+    message: string;
+}
+
+interface Community {
+    icon: string;
+    title: string;
+    testimonials: Testimonial[];
+}
+
+interface Accordion {
+    question: string;
+    answer: string;
+}
+
+interface FAQ {
+    icon: string;
+    title: string;
+    accordions: Accordion[];
+}
+
+interface Join {
+    image: string;
+    title: string;
+    subtitle: string;
+    btnText: string;
+}
+
+interface Footer {
+    logo: string;
+    copyrightText: string;
+}
+
+export const header: Header = {
     logo: Logo,
     btnLoginText: 'Log in',
     btnSignupText: 'Sign Up',
 };
 
-export const nav = [
+export const nav: NavItem[] = [
     { name: 'Home', href: '/' },
     { name: 'About', href: '/' },
     { name: 'Workouts', href: '/' },
@@ -34,26 +120,24 @@ export const nav = [
     { name: 'FAQ', href: '/' },
 ];
 
-export const banner = {
+export const banner: Banner = {
     titlePart1: 'Get the best part of your day',
     titlePart2: '– you fit here.',
-    subtitle:
-        'We provide serious fitness but within a fun and friendly, safe space.',
+    subtitle: 'We provide serious fitness but within a fun and friendly, safe space.',
     textBtn: 'Join Now',
     img: '',
 };
 
-export const about = {
+export const about: About = {
     icon: UsersIcn,
-    title: 'Our misson',
+    title: 'Our mission',
     subtitle1:
         'We are distinguished by our unsurpassed motivating atmosphere, knowledgeable staff, and premier exercise equipment, which supports our members in meeting their individual fitness goals.',
-    subtitle2:
-        'The strength of our heart-felt identity is utilized to inspire every person that steps foot into our gyms to better themselves.',
+    subtitle2: 'The strength of our heart-felt identity is utilized to inspire every person that steps foot into our gyms to better themselves.',
     link: 'Join Now',
 };
 
-export const workouts = {
+export const workouts: Workouts = {
     icon: CalendarIcn,
     title: 'Training programs',
     programs: [
@@ -88,7 +172,7 @@ export const workouts = {
     ],
 };
 
-export const pricing = {
+export const pricing: Pricing = {
     icon: PriceIcn,
     title: 'Pricing plan',
     plans: [
@@ -128,83 +212,72 @@ export const pricing = {
     ],
 };
 
-export const community = {
+export const community: Community = {
     icon: CommunityIcn,
     title: 'Community',
     testimonials: [
         {
             image: CommunityImg1,
             name: 'Mark A.',
-            message:
-                '“Great location, great price and great, helpful people. What to want more?”',
+            message: '“Great location, great price and great, helpful people. What to want more?”',
         },
         {
             image: CommunityImg2,
             name: 'Lauren K.',
-            message:
-                '“Gymme changed my life. Not only physically but mentally as well. I’m a better mother, and all around better human being because of this gym.”',
+            message: '“Gymme changed my life. Not only physically but mentally as well. I’m a better mother, and all around better human being because of this gym.”',
         },
         {
             image: CommunityImg3,
-            name: 'Jhon D.',
-            message:
-                '“Love these workouts! Trainers are knowledgeable and motivating. Gymme is wonderful!”',
+            name: 'John D.',
+            message: '“Love these workouts! Trainers are knowledgeable and motivating. Gymme is wonderful!”',
         },
         {
             image: CommunityImg4,
             name: 'Anne R.',
-            message:
-                '“Love these workouts! Trainers are knowledgeable and motivating. Gymme is wonderful!”',
+            message: '“Love these workouts! Trainers are knowledgeable and motivating. Gymme is wonderful!”',
         },
     ],
 };
 
-export const faq = {
+export const faq: FAQ = {
     icon: QuestionMarkIcn,
     title: 'FAQ',
     accordions: [
         {
             question: 'How can I book a workout class?',
-            answer:
-                'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae temporibus beatae, totam repudiandae nam recusandae ea dolores tempora maxime.',
+            answer: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae temporibus beatae, totam repudiandae nam recusandae ea dolores tempora maxime.',
         },
         {
             question: 'Can I pay by cash for my membership?',
-            answer:
-                'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae temporibus beatae, totam repudiandae nam recusandae ea dolores tempora maxime.',
+            answer: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae temporibus beatae, totam repudiandae nam recusandae ea dolores tempora maxime.',
         },
         {
             question: 'What age do I need to be to join?',
-            answer:
-                'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae temporibus beatae, totam repudiandae nam recusandae ea dolores tempora maxime.',
+            answer: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae temporibus beatae, totam repudiandae nam recusandae ea dolores tempora maxime.',
         },
         {
             question: 'Are there any lockers?',
-            answer:
-                'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae temporibus beatae, totam repudiandae nam recusandae ea dolores tempora maxime.',
+            answer: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae temporibus beatae, totam repudiandae nam recusandae ea dolores tempora maxime.',
         },
         {
             question: 'How do I cancel my membership?',
-            answer:
-                'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae temporibus beatae, totam repudiandae nam recusandae ea dolores tempora maxime.',
+            answer: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae temporibus beatae, totam repudiandae nam recusandae ea dolores tempora maxime.',
         },
         {
             question: 'Is there water available at the gym?',
-            answer:
-                'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae temporibus beatae, totam repudiandae nam recusandae ea dolores tempora maxime.',
+            answer: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae temporibus beatae, totam repudiandae nam recusandae ea dolores tempora maxime.',
         },
     ],
 };
 
-export const join = {
+export const join: Join = {
     image: JoinImg,
     title: 'Wanna join & have fun?',
-    subtitle:
-        'We’ll keep you updated on the things you need to know about Gymme. Nothing more, nothing less.',
+    subtitle: 'We’ll keep you updated on the things you need to know about Gymme. Nothing more, nothing less.',
     btnText: 'Join now',
 };
 
-export const footer = {
+export const footer: Footer = {
     logo: Logo,
     copyrightText: 'All rights reserved. Gymme 2022.',
 };
