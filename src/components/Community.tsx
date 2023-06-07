@@ -3,7 +3,9 @@ import React from 'react';
 import {community} from "../data"
 import CommunitySlider from "./CommunitySlider";
 
-const Community = () => {
+
+
+const Community= () => {
 
     const {icon, title, testimonials} = community
 
@@ -19,8 +21,8 @@ const Community = () => {
                             </span>
                         </h2>
                     </div>
-                    <div>
-                        <CommunitySlider/>
+                    <div className='absolute -right-[375px] w-[1140px] top-48 lg:top-0'>
+                        <CommunitySlider testimonials={testimonials}/>
                     </div>
                 </div>
             </div>
