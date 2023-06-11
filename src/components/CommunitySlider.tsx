@@ -3,6 +3,7 @@ import React, {FC} from 'react';
 import {Swiper, SwiperSlide} from 'swiper/react'
 import "swiper/css";
 import 'swiper/css/navigation'
+import {AiFillDiff} from "react-icons/all";
 
 interface TestimonialProps {
     testimonials: any
@@ -33,7 +34,11 @@ const CommunitySlider: FC<TestimonialProps> = ({testimonials}) => {
                             </div>
                             <div>
                                 <div>{message}</div>
-                                <div>{name}</div>
+                                <div>
+                                    <span>~</span>
+                                    <div>{name}</div>
+                                </div>
+
                             </div>
                         </div>
                     </SwiperSlide>
