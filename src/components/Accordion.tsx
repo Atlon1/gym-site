@@ -1,6 +1,10 @@
-import React from 'react';
+import React, {FC} from 'react';
 
-const Accordion = () => {
+interface AccordionProps {
+    accordion: any
+}
+
+const Accordion: FC<AccordionProps>=  ({accordion}) => {
     return (
         <div>
             Acorddion
