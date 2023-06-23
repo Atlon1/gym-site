@@ -15,7 +15,6 @@ import Join from './components/Join';
 import Footer from './components/Footer';
 
 const App = () => {
-    // aos initialization
     Aos.init({
         duration: 2500,
         delay: 400,
