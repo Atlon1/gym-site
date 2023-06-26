@@ -7,7 +7,7 @@ const Faq = () => {
 
     const {icon, title, accordions} = faq
     return (
-        <section className='section pt-[480px] lg:pt-[280px]' id="faq">
+        <section className='section pt-[480px] lg:pt-[280px] mb-[80px] lg:mb-0' id="faq">
             <div className='max-w-[768px] mx-auto lg:bg-faq bg-no-repeat bg-custom bg-center lg:h-[1160px] lg:pt-6'>
                 <div className='section-title-group justify-start lg:justify-center -space-x-4 lg:max-w-[540px] mx-auto px-4 lg:px-0'
                      data-aos='fade-up'
