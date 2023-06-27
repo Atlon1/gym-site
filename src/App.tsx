@@ -13,6 +13,7 @@ import Community from './components/Community';
 import Faq from './components/Faq';
 import Join from './components/Join';
 import Footer from './components/Footer';
+import ArrowUp from "./components/ArrowUp";
 
 const App = () => {
     Aos.init({
@@ -29,7 +30,8 @@ const App = () => {
             <Community />
             <Faq />
             <Join />
-            <Footer />
+            <Footer/>
+            <ArrowUp/>
         </div>
     );
 };

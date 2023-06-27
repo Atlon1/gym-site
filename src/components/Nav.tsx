@@ -17,6 +17,7 @@ const Nav = () => {
                         >
                             <Link
                                 smooth={true}
+                                offset={-100}
                                 to={elem.href}>{elem.name}</Link>
                         </li>
                     )
