@@ -1,5 +1,7 @@
 import React from 'react';
 
+
+
 import {nav} from "../data"
 
 const Nav = () => {
@@ -10,7 +12,9 @@ const Nav = () => {
                     return (
                         <li
                             className='hover:text-primary-200 transition'
-                            key={index}>
+                            key={index}
+
+                        >
                             <a href={elem.href}>{elem.name}</a>
                         </li>
                     )
