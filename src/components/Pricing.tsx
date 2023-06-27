@@ -8,7 +8,7 @@ const Pricing = () => {
     const {icon, title, plans} = pricing
 
     return (
-        <section className='section'>
+        <section className='section' id='pricing'>
            <div className='section-title-group max-w-[540px] mx-auto px-4 lg:px-0'
             data-aos='fade-up'
                 data-aos-offset="200"

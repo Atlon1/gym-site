@@ -16,7 +16,8 @@ const NavMobile: FC<NavMobileProps> = ({navMobile}) => {
                         <li key={idx}>
                             <a
                                 className='text-white text-body-md'
-                                href={item.href}>{item.name}</a>
+                                href={item.href}>{item.name}
+                            </a>
                         </li>
                     )
                 })}

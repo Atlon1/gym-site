@@ -1,5 +1,5 @@
 import React from 'react';
-
+import {Link} from 'react-scroll'
 
 
 import {nav} from "../data"
@@ -15,7 +15,9 @@ const Nav = () => {
                             key={index}
 
                         >
-                            <a href={elem.href}>{elem.name}</a>
+                            <Link
+                                smooth={true}
+                                to={elem.href}>{elem.name}</Link>
                         </li>
                     )
                 })}

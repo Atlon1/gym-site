@@ -10,7 +10,7 @@ const Community= () => {
     const {icon, title, testimonials} = community
 
     return (
-        <section className='section relative'>
+        <section className='section relative' id="community">
             <div className='container mx-auto'>
                 <div className='flex'>
                     <div className='section-title-group max-w-[240px] mx-auto px-4 lg:px-0 lg:ml-0 '
