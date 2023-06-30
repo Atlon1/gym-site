@@ -122,10 +122,10 @@ export const nav: NavItem[] = [
 ];
 
 export const banner: Banner = {
-    titlePart1: 'Get the best part of your day',
-    titlePart2: '– you fit here.',
-    subtitle: 'We provide serious fitness but within a fun and friendly, safe space.',
-    textBtn: 'Join Now',
+    titlePart1: 'Wyciągnij najlepsze',
+    titlePart2: '– pasujesz tutaj.',
+    subtitle: 'Zapewniamy poważne ćwiczenia, ale w przyjaznej, zabawowej i bezpiecznej atmosferze.',
+    textBtn: 'Dołącz teraz',
     img: '',
 };
 

@@ -2,11 +2,11 @@ import ReactDOM from 'react-dom/client'
 import "./tailwind.css";
 import App from "./App";
 import React from 'react';
-
+import i18next from "i18next";
 import global_pl from '../src/translations/pl/global.json'
 import global_eng from '../src/translations/eng/global.json'
 
-import i18next from "i18next";
+
 import {I18nextProvider} from "react-i18next";
 
 i18next.init({

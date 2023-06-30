@@ -2,9 +2,11 @@ import React from 'react';
 
 import {banner} from "../translations/eng/data";
 
+
 const Banner = () => {
 
     const {titlePart1, titlePart2, subtitle, textBtn} = banner
+
 
     return (
         <section className='bg-neutral-500 h-[790px]' id="home">
