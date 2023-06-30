@@ -11,7 +11,7 @@ const Nav = () => {
                 {nav.map((elem : any, index: number) => {
                     return (
                         <li
-                            className='hover:text-primary-200 transition'
+                            className='hover:text-primary-200 transition cursor-pointer'
                             key={index}
 
                         >

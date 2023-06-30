@@ -10,7 +10,9 @@ const ArrowUp = () => {
 
 
     useEffect(() => {
-       window.scrollY > 150 ? setIsActive(true) : setIsActive(false)
+        window.addEventListener("scroll",()=> {
+            window.scrollY > 150 ? setIsActive(false) : setIsActive(true)
+        })
     }, []);
 
     const handleUp = () => {
@@ -18,7 +20,7 @@ const ArrowUp = () => {
     };
 
     return (
-        <div className={`${isActive ? 'md:hidden fixed right-10 bottom-10' : 'opacity-0'} duration-500 transition-all`} id='arrow'>
+        <div className={`${isActive ? "hidden" : 'md:hidden fixed right-10 bottom-10'} duration-500 transition-all z-30`} id='arrow'>
             <BsFillArrowUpSquareFill
                 onClick={handleUp}
                 className='w-10 h-10 text-primary-200 cursor-pointer'/>
