@@ -3,9 +3,9 @@ import "./tailwind.css";
 import App from "./App";
 import React from 'react';
 
+import global_pl from '../src/translations/pl/global.json'
+import global_eng from '../src/translations/eng/global.json'
 
-import global_eng from '../src/translations/eng/data'
-import global_pl from '../src/translations/pl/data'
 import i18next from "i18next";
 import {I18nextProvider} from "react-i18next";
 

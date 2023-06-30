@@ -4,8 +4,7 @@ import {IoIosArrowDroprightCircle} from "react-icons/io";
 import {useTranslation} from "react-i18next";
 
 const About = () => {
-    const {title, subtitle1, subtitle2, icon, link} = about
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    const {icon} = about
     const [t, i18n] = useTranslation('global')
 
     return (
@@ -16,7 +15,7 @@ const About = () => {
                     data-aos-dely='100'
                     className='section-title-group justify-start'>
                     <img src={icon} alt='icon'/>
-                    <h2 className='h2 section-title'>{t(title)}
+                    <h2 className='h2 section-title'>{t('about.title')}
                         <span className='text-primary-200'>
                         .
                     </span>
@@ -25,15 +24,15 @@ const About = () => {
                 <p
                     data-aos='fade-up'
                     data-aos-dely='200'
-                    className='md:text-body-md mb-12'>{t(subtitle1)}</p>
+                    className='md:text-body-md mb-12'>{t('about.subtitle1')}</p>
                 <p  data-aos='fade-up'
                     data-aos-dely='300'
-                    className='md:text-body-md mb-8'>{t(subtitle2)}</p>
+                    className='md:text-body-md mb-8'>{t('about.subtitle2')}</p>
                 <div
                     data-aos='fade-up'
                     data-aos-dely='400'>
                     <a className='link flex items-center gap-x-4 hover:gap-x-6 transition-all'
-                       href='#'>{link}
+                       href='#'>{t('about.link')}
                         <IoIosArrowDroprightCircle className='text-2xl'/>
                     </a>
                 </div>
