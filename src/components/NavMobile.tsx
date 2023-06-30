@@ -1,5 +1,5 @@
 import React, {FC} from 'react';
-import {nav} from '../data'
+import {nav} from '../translations/eng/data'
 import {Link} from 'react-scroll'
 
 interface NavMobileProps {

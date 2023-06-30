@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {workouts} from "../data";
+import {workouts} from "../translations/eng/data";
 import WorkoutSlider from "./WorkoutSlider";
 
 const Workouts = () => {

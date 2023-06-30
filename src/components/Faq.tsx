@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {faq} from "../data";
+import {faq} from "../translations/eng/data";
 import Accordion from "./Accordion";
 
 const Faq = () => {

@@ -1,21 +1,22 @@
 import React, {FC, useState} from 'react';
 
 import {FaChevronCircleUp, FaChevronCircleDown} from "react-icons/fa"
+import {useTranslation} from "react-i18next";
 
 interface AccordionProps {
     accordion: any
 }
 
-const Accordion: FC<AccordionProps>=  ({accordion}) => {
+const Accordion: FC<AccordionProps> = ({accordion}) => {
     const [isOpen, setIsOpen] = useState(false)
-
-    const {question,  answer} = accordion
+    const {question, answer} = accordion
+    const [t, i18n] = useTranslation('global')
 
     return (
         <div onClick={() => setIsOpen(!isOpen)} className='cursor-pointer'>
             <div className='bg-white border rounded-sm '>
                 <div className='min-h-[60px] flex items-center justify-between px-[30px]'>
-                    <h6 className='h6'>{question}</h6>
+                    <h6 className='h6'>{t(question)}</h6>
                     <div>
                         {isOpen ? (
                             <FaChevronCircleUp className='text-[20px] text-neutral-500'/>
@@ -24,10 +25,10 @@ const Accordion: FC<AccordionProps>=  ({accordion}) => {
                         )}
                     </div>
                 </div>
-                <div className={`${isOpen ? 'min-h-[200px] lg:min-h-[200px]': 'min-h-0'} max-h-0 overflow-hidden 
+                <div className={`${isOpen ? 'min-h-[200px] lg:min-h-[200px]' : 'min-h-0'} max-h-0 overflow-hidden 
                 flex justify-center transition-all px-[30px]`}>
                     <div className='mt-6'>
-                        {answer}
+                        {t(answer)}
                     </div>
                 </div>
             </div>

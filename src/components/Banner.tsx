@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {banner} from "../data";
+import {banner} from "../translations/eng/data";
 
 const Banner = () => {
 

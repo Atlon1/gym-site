@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {footer} from "../data";
+import {footer} from "../translations/eng/data";
 
 const Footer = () => {
     const {logo, copyrightText} = footer

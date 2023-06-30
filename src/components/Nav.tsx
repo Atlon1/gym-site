@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from 'react-scroll'
 
 
-import {nav} from "../data"
+import {nav} from "../translations/eng/data"
 
 const Nav = () => {
     return (

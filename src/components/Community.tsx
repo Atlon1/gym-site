@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {community} from "../data"
+import {community} from "../translations/eng/data"
 import CommunitySlider from "./CommunitySlider";
 
 

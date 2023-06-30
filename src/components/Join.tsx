@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {join} from "../data";
+import {join} from "../translations/eng/data";
 
 const Join = () => {
     const {image, title,subtitle,btnText} = join

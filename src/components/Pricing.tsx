@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {pricing} from '../data'
+import {pricing} from '../translations/eng/data'
 import PlanList from "./PlanList";
 
 

@@ -1,5 +1,5 @@
 import React, {useState,useEffect} from 'react';
-import {header} from "../data";
+import {header} from "../translations/eng/data";
 import Nav from '../components/Nav'
 import NavMobile from '../components/NavMobile'
 import {RiMenu4Fill, RiCloseFill} from "react-icons/ri"
