@@ -112,12 +112,12 @@ export const header: Header = {
     btnSignupText: 'Sign Up',
 };
 
-export const nav: NavItem[] = [
-    { name: 'Home', href: 'home' },
-    { name: 'About', href: 'about' },
-    { name: 'Workouts', href: 'workouts' },
-    { name: 'Pricing', href: 'pricing' },
-    { name: 'Community', href: 'community' },
+export const navPl: NavItem[] = [
+    { name: 'Strona główna', href: 'home' },
+    { name: 'O nas', href: 'about' },
+    { name: 'Treningi', href: 'workouts' },
+    { name: 'Cennik', href: 'pricing' },
+    { name: 'Społeczność', href: 'community' },
     { name: 'FAQ', href: 'faq' },
 ];
 
@@ -129,13 +129,13 @@ export const banner: Banner = {
     img: '',
 };
 
-export const about: About = {
+export const aboutpl: About = {
     icon: UsersIcn,
-    title: 'Our mission',
+    title: "Nasza misja",
     subtitle1:
-        'We are distinguished by our unsurpassed motivating atmosphere, knowledgeable staff, and premier exercise equipment, which supports our members in meeting their individual fitness goals.',
-    subtitle2: 'The strength of our heart-felt identity is utilized to inspire every person that steps foot into our gyms to better themselves.',
-    link: 'Join Now',
+        "Wyróżniamy się niezrównaną atmosferą motywacyjną, wykwalifikowaną kadrą i najlepszym sprzętem do ćwiczeń, co pomaga naszym członkom osiągnąć indywidualne cele fitness.",
+    subtitle2: "Siła naszej prawdziwej tożsamości jest wykorzystywana do inspiracji każdej osoby, która przekracza próg naszych siłowni, by się doskonalić.",
+    link: "Dołącz teraz",
 };
 
 export const workouts: Workouts = {

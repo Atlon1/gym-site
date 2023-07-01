@@ -1,9 +1,6 @@
 import React from 'react';
-
 import Aos from 'aos'
 import 'aos/dist/aos.css';
-
-// import components
 import Banner from './components/Banner';
 import Header from './components/Header';
 import About from './components/About';

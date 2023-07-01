@@ -112,7 +112,7 @@ export const header: Header = {
     btnSignupText: 'Sign Up',
 };
 
-export const nav: NavItem[] = [
+export const navEng: NavItem[] = [
     { name: 'Home', href: 'home' },
     { name: 'About', href: 'about' },
     { name: 'Workouts', href: 'workouts' },
@@ -129,7 +129,7 @@ export const banner: Banner = {
     img: '',
 };
 
-export const about: About = {
+export const abouteng: About = {
     icon: UsersIcn,
     title: 'Our mission',
     subtitle1:

@@ -1,5 +1,6 @@
 import React, {FC} from 'react';
-import {nav} from '../translations/eng/data'
+import {navEng} from '../translations/eng/data'
+import {navPl} from "../translations/pl/data"
 import {Link} from 'react-scroll'
 
 interface NavMobileProps {
@@ -12,7 +13,7 @@ const NavMobile: FC<NavMobileProps> = ({navMobile}) => {
          w-full bg-neutral-500 fixed top-0 left-0 right-0 -bottom-12 -z-10 overflow-hidden
          transition-all h-0 `}>
             <ul className='w-full h-full flex flex-col justify-center items-center gap-y-8'>
-                {nav.map((item : any, idx: number) =>{
+                {navEng.map((item : any, idx: number) =>{
                     return (
                         <li key={idx}>
                             <Link
