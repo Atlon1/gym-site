@@ -106,10 +106,10 @@ interface Footer {
     copyrightText: string;
 }
 
-export const header: Header = {
+export const headerPl: Header = {
     logo: Logo,
-    btnLoginText: 'Log in',
-    btnSignupText: 'Sign Up',
+    btnLoginText: "Zaloguj się",
+    btnSignupText: "Zarejestruj się",
 };
 
 export const navPl: NavItem[] = [

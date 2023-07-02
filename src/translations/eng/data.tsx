@@ -106,7 +106,7 @@ interface Footer {
     copyrightText: string;
 }
 
-export const header: Header = {
+export const headerEng: Header = {
     logo: Logo,
     btnLoginText: 'Log in',
     btnSignupText: 'Sign Up',

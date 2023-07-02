@@ -5,43 +5,10 @@ import {navPl} from "../translations/pl/data"
 
 
 const Nav = () => {
-
-    const [lang, setLang] = useState("pl")
-    const res = lang === "pl" ? navPl : navEng
-
-    useEffect(() => {
-        if (localStorage.getItem('lang') === null) {
-            localStorage.setItem('lang', 'pl')
-        }
-    }, [])
-
-    useEffect(() => {
-        const html: any = document.querySelector('html')
-        if (localStorage.getItem('lang') === 'eng') {
-            html.classList.add('eng')
-            setLang('eng')
-        } else {
-            html.classList.remove('eng')
-            setLang('pl')
-        }
-    }, [lang])
-
-    const handleSwitch = () => {
-        if (localStorage.getItem('lang') === 'pl') {
-            setLang('eng');
-            localStorage.setItem('lang', 'eng')
-        } else {
-            setLang('pl')
-            localStorage.setItem('lang', 'pl')
-        }
-        window.location.reload();
-
-    }
-
-
+    const res = localStorage.getItem('lang') === "pl" ? navPl : navEng
     return (
         <nav className='hidden lg:flex'>
-            <ul className=' flex text-white gap-x-8'>
+            <ul className=' flex text-white gap-x-6'>
                 {res.map((elem: any, index: number) => {
                     return (
                         <li
@@ -57,7 +24,6 @@ const Nav = () => {
                     )
                 })}
             </ul>
-            <button onClick={handleSwitch}>Język</button>
         </nav>
     );
 };

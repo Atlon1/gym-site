@@ -1,4 +1,4 @@
-import React, {FC} from 'react';
+import React, {FC, useState} from 'react';
 import {navEng} from '../translations/eng/data'
 import {navPl} from "../translations/pl/data"
 import {Link} from 'react-scroll'
@@ -8,12 +8,14 @@ interface NavMobileProps {
 }
 
 const NavMobile: FC<NavMobileProps> = ({navMobile}) => {
+
+    const res = localStorage.getItem('lang') === "pl" ? navPl : navEng
     return (
         <nav className={`${navMobile ? 'min-h-screen' : 'min-h-0'} lg:hidden
          w-full bg-neutral-500 fixed top-0 left-0 right-0 -bottom-12 -z-10 overflow-hidden
          transition-all h-0 `}>
             <ul className='w-full h-full flex flex-col justify-center items-center gap-y-8'>
-                {navEng.map((item : any, idx: number) =>{
+                {res.map((item : any, idx: number) =>{
                     return (
                         <li key={idx}>
                             <Link

@@ -1,13 +1,51 @@
 import React, {useState,useEffect} from 'react';
-import {header} from "../translations/eng/data";
 import Nav from '../components/Nav'
 import NavMobile from '../components/NavMobile'
 import {RiMenu4Fill, RiCloseFill} from "react-icons/ri"
+import {headerPl} from "../translations/pl/data";
+import {headerEng} from "../translations/eng/data"
 
 const Header = () => {
     const [isActive, setIsActive] = useState(false)
     const [navMobile, setNavMobile] = useState(false)
+    const [langActive, setLangActive] = useState(false)
+    const [lang, setLang] = useState("pl")
 
+    const res = lang === "pl" ? headerPl : headerEng
+
+    useEffect(() => {
+        if (localStorage.getItem('lang') === null) {
+            localStorage.setItem('lang', 'pl')
+        }
+    }, [])
+
+    useEffect(() => {
+        const html: any = document.querySelector('html')
+        if (localStorage.getItem('lang') === 'eng') {
+            html.classList.add('eng')
+            setLang('eng')
+        } else {
+            html.classList.remove('eng')
+            setLang('pl')
+        }
+    }, [lang])
+
+    const handleSwitchENG = () => {
+        if (localStorage.getItem('lang') === 'pl') {
+            setLang('eng');
+            localStorage.setItem('lang', 'eng')
+        }
+        window.location.reload();
+        setLangActive(!langActive)
+    }
+    const handleSwitchPL = () => {
+        if (localStorage.getItem('lang') === 'eng') {
+            setLang('pl');
+            localStorage.setItem('lang', 'pl')
+        }
+        window.location.reload();
+        setLangActive(!langActive)
+    }
 
     useEffect(() => {
         window.addEventListener('scroll', ()=> {
@@ -17,7 +55,8 @@ const Header = () => {
 
 
 
-    const {logo, btnLoginText, btnSignupText} = header
+
+    const {logo, btnLoginText, btnSignupText} = lang === "pl" ? headerPl : headerEng
     return (
 
         <header className={`${isActive ? 'bg-neutral-500 py-[16px]' : 'bg-transparent py-[20px]'}
@@ -31,7 +70,14 @@ const Header = () => {
             <div className='hidden lg:flex space-x-4'>
                 <button className='btn btn-sm text-white hover:text-primary-200 transition'>{btnLoginText}</button>
                 <button className='btn btn-sm btn-primary'>{btnSignupText}</button>
-
+                <div className='flex flex-col'>
+                    <button
+                        className={`${langActive ? "text-gray-500" : "bg-neutral-500 text-white"} px-3 rounded-full`}
+                        onClick={handleSwitchPL}>PL</button>
+                    <button
+                        className={`${langActive ? "bg-neutral-500 text-white" : "text-gray-500"} px-3 rounded-full`}
+                        onClick={handleSwitchENG}>Eng</button>
+                </div>
             </div>
             <div
                 onClick={() => setNavMobile(!navMobile)}
