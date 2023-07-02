@@ -11,22 +11,28 @@ const Header = () => {
     const [langActive, setLangActive] = useState(false)
     const [lang, setLang] = useState("pl")
 
-    const res = lang === "pl" ? headerPl : headerEng
 
     useEffect(() => {
         if (localStorage.getItem('lang') === null) {
             localStorage.setItem('lang', 'pl')
         }
     }, [])
+    useEffect(() => {
+        if (localStorage.getItem('active') === null) {
+            localStorage.setItem('active', 'false')
+        }
+    }, [])
 
     useEffect(() => {
         const html: any = document.querySelector('html')
-        if (localStorage.getItem('lang') === 'eng') {
+        if (localStorage.getItem('lang') === 'eng' && localStorage.getItem('active') === "false") {
             html.classList.add('eng')
             setLang('eng')
+            setLangActive(true)
         } else {
             html.classList.remove('eng')
             setLang('pl')
+            setLangActive(false)
         }
     }, [lang])
 
@@ -72,11 +78,11 @@ const Header = () => {
                 <button className='btn btn-sm btn-primary'>{btnSignupText}</button>
                 <div className='flex flex-col'>
                     <button
-                        className={`${langActive ? "text-gray-500" : "bg-neutral-500 text-white"} px-3 rounded-full`}
+                        className={`${langActive ? "text-gray-500" : "bg-neutral-500 text-white"} px-5 rounded-full hover:bg-neutral-300 duration-500`}
                         onClick={handleSwitchPL}>PL</button>
                     <button
-                        className={`${langActive ? "bg-neutral-500 text-white" : "text-gray-500"} px-3 rounded-full`}
-                        onClick={handleSwitchENG}>Eng</button>
+                        className={`${langActive ? "bg-neutral-500 text-white" : "text-gray-500"} px-5 rounded-full hover:bg-neutral-300 duration-500`}
+                        onClick={handleSwitchENG}>ENG</button>
                 </div>
             </div>
             <div
