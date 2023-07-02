@@ -1,6 +1,6 @@
 import React from 'react';
-
-import {workouts} from "../translations/eng/data";
+import {workoutsEng} from '../translations/eng/data';
+import {workoutsPl} from '../translations/pl/data';
 import {Swiper, SwiperSlide} from 'swiper/react'
 import 'swiper/css'
 import 'swiper/css/navigation'
@@ -10,7 +10,7 @@ import {Navigation} from "swiper";
 
 const WorkoutSlider = () => {
 
-    const {programs} = workouts
+    const {programs} = localStorage.getItem("lang") === "pl" ? workoutsPl : workoutsEng
     return (
         <Swiper
             slidesPerView={2}

@@ -1,11 +1,11 @@
 import React from 'react';
-
-import {banner} from "../translations/eng/data";
+import {bannerEng} from '../translations/eng/data';
+import {bannerPl} from '../translations/pl/data';
 
 
 const Banner = () => {
 
-    const {titlePart1, titlePart2, subtitle, textBtn} = banner
+    const {titlePart1, titlePart2, subtitle, textBtn} = localStorage.getItem('lang') === 'pl' ? bannerPl : bannerEng
 
 
     return (

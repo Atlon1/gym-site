@@ -121,7 +121,7 @@ export const navEng: NavItem[] = [
     { name: 'FAQ', href: 'faq' },
 ];
 
-export const banner: Banner = {
+export const bannerEng: Banner = {
     titlePart1: 'Get the best part of your day',
     titlePart2: '– you fit here.',
     subtitle: 'We provide serious fitness but within a fun and friendly, safe space.',
@@ -138,7 +138,7 @@ export const abouteng: About = {
     link: 'Join Now',
 };
 
-export const workouts: Workouts = {
+export const workoutsEng: Workouts = {
     icon: CalendarIcn,
     title: 'Training programs',
     programs: [

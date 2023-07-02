@@ -121,7 +121,7 @@ export const navPl: NavItem[] = [
     { name: 'FAQ', href: 'faq' },
 ];
 
-export const banner: Banner = {
+export const bannerPl: Banner = {
     titlePart1: 'Wyciągnij najlepsze',
     titlePart2: '– pasujesz tutaj.',
     subtitle: 'Zapewniamy poważne ćwiczenia, ale w przyjaznej, zabawowej i bezpiecznej atmosferze.',
@@ -138,37 +138,37 @@ export const aboutpl: About = {
     link: "Dołącz teraz",
 };
 
-export const workouts: Workouts = {
+export const workoutsPl: Workouts = {
     icon: CalendarIcn,
-    title: 'Training programs',
+    title: "Programy treningowe",
     programs: [
         {
             image: ResistanceImg,
-            name: 'Resistance',
+            name: "Trening oporowy",
         },
         {
             image: BoxingImg,
-            name: 'Boxing',
+            name: "Boks",
         },
         {
             image: BodyPumpImg,
-            name: 'Body Pump',
+            name: "Body Pump",
         },
         {
             image: YogaImg,
-            name: 'Yoga',
+            name: "Joga",
         },
         {
             image: FullBodyImg,
-            name: 'Full Body',
+            name: "Trening całego ciała",
         },
         {
             image: FitnessImg,
-            name: 'Fitness',
+            name: "Fitness",
         },
         {
             image: BattleRopeImg,
-            name: 'Battle Rope',
+            name: "Walka na linie",
         },
     ],
 };
