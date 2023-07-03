@@ -1,11 +1,11 @@
 import React from 'react';
-
-import {pricing} from '../translations/eng/data'
+import {pricingEng} from '../translations/eng/data';
+import {pricingPl} from '../translations/pl/data';
 import PlanList from "./PlanList";
 
 
 const Pricing = () => {
-    const {icon, title, plans} = pricing
+    const {icon, title, plans} = localStorage.getItem("lang") === 'pl' ? pricingPl : pricingEng
 
     return (
         <section className='section' id='pricing'>

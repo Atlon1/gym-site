@@ -61,6 +61,8 @@ interface Workouts {
 interface PricingPlan {
     name: string;
     price: string;
+    typPrice: string;
+    howLong: string;
     list: { name: string }[];
     delay: number;
 }
@@ -173,40 +175,46 @@ export const workoutsPl: Workouts = {
     ],
 };
 
-export const pricing: Pricing = {
+export const pricingPl: Pricing = {
     icon: PriceIcn,
-    title: 'Pricing plan',
+    title: 'Plan cenowy',
     plans: [
         {
-            name: 'Basic',
-            price: '20',
+            name: 'Podstawowy',
+            price: '89',
+            typPrice: "zł",
+            howLong: "/miesiąc",
             list: [
-                { name: 'unlimited gym access' },
-                { name: '1 training programs' },
-                { name: 'free fitness consultation' },
+                { name: 'nieograniczony dostęp do siłowni' },
+                { name: '1 program treningowy' },
+                { name: 'bezpłatne konsultacje fitness' },
             ],
             delay: 600,
         },
         {
             name: 'Premium',
-            price: '35',
+            price: '155',
+            typPrice: "zł",
+            howLong: "/miesiąc",
             list: [
-                { name: 'unlimited gym access' },
-                { name: '5 training programs' },
-                { name: 'free fitness consultation' },
-                { name: 'personal trainer' },
+                { name: 'nieograniczony dostęp do siłowni' },
+                { name: '5 programów treningowych' },
+                { name: 'bezpłatne konsultacje fitness' },
+                { name: 'trener personalny' },
             ],
             delay: 800,
         },
         {
             name: 'Elite',
-            price: '49',
+            price: '220',
+            typPrice: "zł",
+            howLong: "/miesiąc",
             list: [
-                { name: 'unlimited gym access' },
-                { name: 'all training programs' },
-                { name: 'free fitness consultation' },
-                { name: 'personal trainer' },
-                { name: '50% off drinks' },
+                { name: 'nieograniczony dostęp do siłowni' },
+                { name: '5 programów treningowych' },
+                { name: 'bezpłatne konsultacje fitness' },
+                { name: 'trener personalny' },
+                { name: "50% zniżki na napoje"},
             ],
             delay: 1000,
         },

@@ -61,6 +61,8 @@ interface Workouts {
 interface PricingPlan {
     name: string;
     price: string;
+    typPrice: string;
+    howLong: string;
     list: { name: string }[];
     delay: number;
 }
@@ -173,13 +175,15 @@ export const workoutsEng: Workouts = {
     ],
 };
 
-export const pricing: Pricing = {
+export const pricingEng: Pricing = {
     icon: PriceIcn,
     title: 'Pricing plan',
     plans: [
         {
             name: 'Basic',
             price: '20',
+            typPrice: "$",
+            howLong: "/month",
             list: [
                 { name: 'unlimited gym access' },
                 { name: '1 training programs' },
@@ -190,6 +194,8 @@ export const pricing: Pricing = {
         {
             name: 'Premium',
             price: '35',
+            typPrice: "$",
+            howLong: "/month",
             list: [
                 { name: 'unlimited gym access' },
                 { name: '5 training programs' },
@@ -201,6 +207,8 @@ export const pricing: Pricing = {
         {
             name: 'Elite',
             price: '49',
+            typPrice: "$",
+            howLong: "/month",
             list: [
                 { name: 'unlimited gym access' },
                 { name: 'all training programs' },
