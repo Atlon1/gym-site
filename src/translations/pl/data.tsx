@@ -221,29 +221,29 @@ export const pricingPl: Pricing = {
     ],
 };
 
-export const community: Community = {
+export const communityPl: Community = {
     icon: CommunityIcn,
-    title: 'Community',
+    title: "Społeczność",
     testimonials: [
         {
             image: CommunityImg1,
             name: 'Mark A.',
-            message: '“Great location, great price and great, helpful people. What to want more?”',
+            message: '„Wspaniała lokalizacja, wspaniała cena i wspaniali, pomocni ludzie. Czego chcieć więcej?”',
         },
         {
             image: CommunityImg2,
             name: 'Lauren K.',
-            message: '“Gymme changed my life. Not only physically but mentally as well. I’m a better mother, and all around better human being because of this gym.”',
+            message: '„Gymme zmienił moje życie. Nie tylko fizycznie, ale także mentalnie. Jestem lepszą matką i ogólnie lepszym człowiekiem dzięki tej siłowni.”',
         },
         {
             image: CommunityImg3,
             name: 'John D.',
-            message: '“Love these workouts! Trainers are knowledgeable and motivating. Gymme is wonderful!”',
+            message: '"„Uwielbiam te treningi! Trenerzy są kompetentni i motywujący. Gymme jest wspaniałe!”',
         },
         {
             image: CommunityImg4,
             name: 'Anne R.',
-            message: '“Love these workouts! Trainers are knowledgeable and motivating. Gymme is wonderful!”',
+            message: '„Uwielbiam te treningi! Trenerzy są kompetentni i motywujący. Gymme jest wspaniałe!”',
         },
     ],
 };

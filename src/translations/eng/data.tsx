@@ -221,7 +221,7 @@ export const pricingEng: Pricing = {
     ],
 };
 
-export const community: Community = {
+export const communityEng: Community = {
     icon: CommunityIcn,
     title: 'Community',
     testimonials: [
