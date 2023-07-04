@@ -99,6 +99,8 @@ interface FAQ {
 interface Join {
     image: string;
     title: string;
+    span: string;
+    title2: string;
     subtitle: string;
     btnText: string;
 }
@@ -279,9 +281,11 @@ export const faqEng: FAQ = {
     ],
 };
 
-export const join: Join = {
+export const joinEng: Join = {
     image: JoinImg,
-    title: 'Wanna join & have fun?',
+    title: 'Wanna join',
+    span: ' & ',
+    title2: 'have fun?',
     subtitle: 'We’ll keep you updated on the things you need to know about Gymme. Nothing more, nothing less.',
     btnText: 'Join now',
 };

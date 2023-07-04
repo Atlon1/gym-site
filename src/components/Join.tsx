@@ -1,9 +1,10 @@
 import React from 'react';
 
-import {join} from "../translations/eng/data";
+import {joinEng} from "../translations/eng/data";
+import {joinPl} from "../translations/pl/data";
 
 const Join = () => {
-    const {image, title,subtitle,btnText} = join
+    const {image, title,title2, span, subtitle,btnText} = localStorage.getItem('lang') === 'pl' ? joinPl : joinEng
     return (
         <section className='bg-neutral-500 min-h-[537px]'>
             <div className='container mx-auto'>
@@ -20,7 +21,7 @@ const Join = () => {
                          data-aos-offset='100'
                          data-aos-delay='200'
                     >
-                        <h2 className='h1 md:text-[60px] md:leading-[62px] mb-4 lg:mb-6 text-white'>Wanna join<span className='text-primary-200'> &</span> have fun?</h2>
+                        <h2 className='h1 md:text-[60px] md:leading-[62px] mb-4 lg:mb-6 text-white'>{title}<span className='text-primary-200'>{span}</span>{title2}</h2>
                         <p className='text-body-sm md:text-body-md text-white mb-4 lg:mb-6 max-w-[348px] md:max-w-[470px] lg:max-w-[492px]'>{subtitle}</p>
                         <button className='btn btn-secondary btn-lg'>{btnText}</button>
                     </div>
