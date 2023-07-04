@@ -1,5 +1,5 @@
 import React from 'react';
-
+import logoM from '../assets/Maciej_logo.png'
 import {footer} from "../translations/eng/data";
 
 const Footer = () => {
@@ -14,6 +14,9 @@ const Footer = () => {
             >
                 <a href='#'>
                     <img src={logo} alt='logo'/>
+                </a>
+                <a href='#' className='lg:max-w-[175px] max-w-[150px]'>
+                    <img src={logoM} alt='logo'/>
                 </a>
                 <p className='text-neutral-300 text-sm'>{copyrightText}</p>
             </div>
