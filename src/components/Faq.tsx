@@ -1,13 +1,13 @@
 import React from 'react';
 
-import {faq} from "../translations/eng/data";
+import {faqEng} from "../translations/eng/data";
+import {faqPl} from "../translations/pl/data";
 import Accordion from "./Accordion";
-import {useTranslation} from "react-i18next";
+
 
 const Faq = () => {
 
-    const {icon, title, accordions} = faq
-    const [t, i18n] = useTranslation('global')
+    const {icon, title, accordions} = localStorage.getItem("lang") === 'pl' ? faqPl : faqEng
 
     return (
         <section className='section pt-[480px] lg:pt-[280px] mb-[80px] lg:mb-0' id="faq">
@@ -18,7 +18,7 @@ const Faq = () => {
                      data-aos-delay='200'
                 >
                     <img className='lg:hidden' src={icon} alt="icon"/>
-                    <h2 className='h2 section-title lg:mt-[100px]'>{t("faq.title")}
+                    <h2 className='h2 section-title lg:mt-[100px]'>{title}
                         <span className='text-primary-200'>.</span>
                     </h2>
                 </div>

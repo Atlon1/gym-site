@@ -248,7 +248,7 @@ export const communityEng: Community = {
     ],
 };
 
-export const faq: FAQ = {
+export const faqEng: FAQ = {
     icon: QuestionMarkIcn,
     title: 'FAQ',
     accordions: [

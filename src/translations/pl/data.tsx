@@ -248,32 +248,32 @@ export const communityPl: Community = {
     ],
 };
 
-export const faq: FAQ = {
+export const faqPl: FAQ = {
     icon: QuestionMarkIcn,
     title: 'FAQ',
     accordions: [
         {
-            question: 'How can I book a workout class?',
+            question: "Jak mogę zarezerwować trening?",
             answer: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae temporibus beatae, totam repudiandae nam recusandae ea dolores tempora maxime.',
         },
         {
-            question: 'Can I pay by cash for my membership?',
+            question: "Czy mogę płacić gotówką za członkostwo?",
             answer: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae temporibus beatae, totam repudiandae nam recusandae ea dolores tempora maxime.',
         },
         {
-            question: 'What age do I need to be to join?',
+            question: "Jaki wiek muszę mieć, aby dołączyć?",
             answer: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae temporibus beatae, totam repudiandae nam recusandae ea dolores tempora maxime.',
         },
         {
-            question: 'Are there any lockers?',
+            question: 'Czy są dostępne szafki?',
             answer: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae temporibus beatae, totam repudiandae nam recusandae ea dolores tempora maxime.',
         },
         {
-            question: 'How do I cancel my membership?',
+            question: 'Jak mogę zrezygnować z członkostwa?',
             answer: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae temporibus beatae, totam repudiandae nam recusandae ea dolores tempora maxime.',
         },
         {
-            question: 'Is there water available at the gym?',
+            question: 'Czy woda jest dostępna w siłownii?',
             answer: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae temporibus beatae, totam repudiandae nam recusandae ea dolores tempora maxime.',
         },
     ],
