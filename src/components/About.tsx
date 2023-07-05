@@ -1,4 +1,4 @@
-import React, {useState,useEffect} from 'react';
+import React from 'react';
 import {abouteng} from '../translations/eng/data';
 import {aboutpl} from '../translations/pl/data';
 
