@@ -6,6 +6,8 @@ import Home from "./pages/Home.";
 import Header from "./components/Header";
 import ArrowUp from "./components/ArrowUp";
 import Footer from "./components/Footer";
+import LoginSection from "./pages/LoginSection";
+import RegisterSection from "./pages/RegisterSection";
 
 const App = () => {
     Aos.init({
@@ -17,6 +19,8 @@ const App = () => {
             <Header/>
             <Routes>
                 <Route path='/my-gym' element={<Home/>}/>
+                <Route path='/my-gym/login' element={<LoginSection/>}/>
+                <Route path='/my-gym/register' element={<RegisterSection/>}/>
             </Routes>
             <ArrowUp/>
             <Footer/>
