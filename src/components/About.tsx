@@ -1,10 +1,7 @@
 import React from 'react';
 import {abouteng} from '../translations/eng/data';
 import {aboutpl} from '../translations/pl/data';
-
 import {IoIosArrowDroprightCircle} from "react-icons/io";
-
-
 
 const About = () => {
 

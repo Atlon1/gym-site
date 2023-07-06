@@ -3,7 +3,8 @@ import {navEng} from '../translations/eng/data'
 import {navPl} from "../translations/pl/data"
 import {Link} from 'react-scroll'
 import {headerPl} from "../translations/pl/data";
-import {headerEng} from "../translations/eng/data"
+import {headerEng} from "../translations/eng/data";
+
 
 interface NavMobileProps {
     navMobile: boolean
@@ -66,7 +67,7 @@ const NavMobile: FC<NavMobileProps> = ({navMobile}) => {
                 })}
             </ul>
             <div className='-mt-44 flex justify-center gap-x-8'>
-                <button className='btn btn-lg text-white'>{btnLoginText}</button>
+                <button className='btn btn-lg text-white'><Link to='/my-gym/login'>{btnLoginText}</Link></button>
                 <button className='btn btn-lg btn-primary'>{btnSignupText}</button>
                 <div className='flex flex-col'>
                     <button
@@ -77,7 +78,6 @@ const NavMobile: FC<NavMobileProps> = ({navMobile}) => {
                         onClick={handleSwitchENG}>ENG</button>
                 </div>
             </div>
-
         </nav>
     );
 };
