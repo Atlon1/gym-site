@@ -4,7 +4,7 @@ const LoginSection = () => {
     return (
         <div>
 
-            </div>
+        </div>
     );
 };
 

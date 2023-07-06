@@ -4,6 +4,7 @@ import NavMobile from '../components/NavMobile'
 import {RiMenu4Fill, RiCloseFill} from "react-icons/ri"
 import {headerPl} from "../translations/pl/data";
 import {headerEng} from "../translations/eng/data"
+import {Link} from "react-router-dom";
 
 const Header = () => {
     const [isActive, setIsActive] = useState(false)
@@ -68,14 +69,14 @@ const Header = () => {
         <header className={`${isActive ? 'bg-neutral-500 py-[16px]' : 'bg-transparent py-[20px]'}
          fixed max-w-[1440px] z-30 left-0 right-0
          mx-auto flex justify-between items-center px-[20px] lg:px-[80px] transition-all duration-300`}>
-            <a href=''>
+            <a href='/my-gym'>
                 <img className='h-[30px]'
                      src={logo} alt='LogoDisc'/>
             </a>
             <Nav/>
             <div className='hidden lg:flex space-x-4'>
-                <button className='btn btn-sm text-white hover:text-primary-200 transition'>{btnLoginText}</button>
-                <button className='btn btn-sm btn-primary'>{btnSignupText}</button>
+                <button className='btn btn-sm text-white hover:text-primary-200 transition'><Link to="/my-gym/login">{btnLoginText}</Link></button>
+                <button className='btn btn-sm btn-primary'><Link to="/my-gym/register">{btnSignupText}</Link></button>
                 <div className='flex flex-col'>
                     <button
                         className={`${langActive ? "text-gray-500" : "bg-neutral-500 text-white"} px-5 rounded-full hover:bg-neutral-300 duration-500`}
