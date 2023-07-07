@@ -8,6 +8,7 @@ const RegisterSection = () => {
     const {loginText, nameUser, password, btnLogin, btnRegister, rptPass} = localStorage.getItem("lang") === 'pl' ? RegisterSectionPl : RegisterSectionEng
 
 
+
     return (
         <section className='bg-neutral-500 h-[800px] ' id='login'>
             <div
@@ -36,7 +37,6 @@ const RegisterSection = () => {
                     </div>
                 </div>
             </div>
-
         </section>
     );
 };
