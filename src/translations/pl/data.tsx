@@ -110,6 +110,22 @@ interface Footer {
     copyrightText: string;
 }
 
+interface login {
+    loginText: string;
+    nameUser: string;
+    password: string;
+    btnLogin: string;
+    btnRegister: string;
+}
+
+export const loginSectionPl: login = {
+    loginText: "Zaloguj się:",
+    nameUser: "Nazwa użytkownika",
+    password: "Hasło",
+    btnLogin: "Zaloguj",
+    btnRegister: "Załóż konto"
+}
+
 export const headerPl: Header = {
     logo: Logo,
     btnLoginText: "Zaloguj się",
@@ -294,5 +310,7 @@ export const footer: Footer = {
     logo: Logo,
     copyrightText: 'All rights reserved. Gymme 2022.',
 };
+
+
 
 export default data
