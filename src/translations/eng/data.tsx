@@ -118,6 +118,24 @@ interface login {
     btnRegister: string;
 }
 
+interface Register {
+    loginText: string;
+    nameUser: string;
+    password: string;
+    btnLogin: string;
+    btnRegister: string;
+    rptPass: string;
+}
+
+export const RegisterSectionEng: Register = {
+    loginText: "Register:",
+    nameUser: "User name",
+    password: "Password",
+    btnLogin: "Log in",
+    btnRegister: "Register",
+    rptPass: "Repeat Password"
+}
+
 export const loginSectionEng: login = {
     loginText: "Log in:",
     nameUser: "User name",

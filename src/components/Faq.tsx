@@ -1,5 +1,4 @@
 import React from 'react';
-
 import {faqEng} from "../translations/eng/data";
 import {faqPl} from "../translations/pl/data";
 import Accordion from "./Accordion";

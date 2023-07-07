@@ -1,6 +1,7 @@
 import React from 'react';
 import {loginSectionEng} from "../translations/eng/data";
 import {loginSectionPl} from "../translations/pl/data";
+import {Link} from 'react-router-dom'
 
 const LoginSection = () => {
 
@@ -25,7 +26,7 @@ const LoginSection = () => {
                     <p className='text-body-md lg:text-body-lg mb-8 text-white'>{password}</p>
                     <div className='flex gap-x-6'>
                         <button className='btn btn-sm lg:btn-lg btn-secondary'>{btnLogin}</button>
-                        <button className='btn btn-sm lg:btn-lg btn-secondary'>{btnRegister}</button>
+                        <button className='btn btn-sm lg:btn-lg btn-secondary'><Link to='/my-gym/register'>{btnRegister}</Link></button>
                     </div>
                 </div>
             </div>
