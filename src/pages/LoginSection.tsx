@@ -5,9 +5,9 @@ import {Link} from 'react-router-dom'
 
 const LoginSection = () => {
 
-    interface loginForm {
+    interface LoginForm {
         email: string;
-        password: string
+        password: string;
     }
 
     const {
@@ -18,16 +18,16 @@ const LoginSection = () => {
         btnRegister
     } = localStorage.getItem("lang") === 'pl' ? loginSectionPl : loginSectionEng
 
-    const [form, setForm] = useState({
+    const [form, setForm] = useState<LoginForm>({
         email: "",
         password: ""
     })
 
-    const [emailErr, setEmailErr] = useState(null);
-    const [passwordErr, setPasswordErr] = useState(null);
+    const [emailErr, setEmailErr] = useState <any>(null);
+    const [passwordErr, setPasswordErr] = useState <any>(null);
 
 
-    const validateEmail = (form: loginForm) => {
+    const validateEmail = (form: LoginForm) => {
         if (!form.email) {
             return "Podany emial jest nie prawidłowy"
         } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(form.email)) {
@@ -36,7 +36,7 @@ const LoginSection = () => {
         return null
     }
 
-    const validatePassword = (form: loginForm) => {
+    const validatePassword = (form: LoginForm) => {
         if (!form.password) {
             return "Podane hasło jest nie prawidłowe!"
         } else if (form.password.length < 5) {
@@ -54,19 +54,15 @@ const LoginSection = () => {
 
 
 
-    const handleSubmit = async (e : any) => {
+    const handleSubmit = async (e: React.FormEvent<HTMLButtonElement>) => {
         e.preventDefault()
         const emailError = validateEmail(form)
         const passError = validatePassword(form)
         if (emailError || passError){
-            // @ts-ignore
             setEmailErr(emailError)
-            // @ts-ignore
             setPasswordErr(passError)
         } else {
-            //@ts-ignore
             setEmailErr('')
-            //@ts-ignore
             setPasswordErr('')
         }
     }
