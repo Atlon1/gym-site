@@ -116,6 +116,10 @@ interface login {
     password: string;
     btnLogin: string;
     btnRegister: string;
+    valEmail: string;
+    valEmail2: string;
+    valPass: string;
+    valPss2: string
 }
 
 interface Register {
@@ -141,7 +145,11 @@ export const loginSectionEng: login = {
     nameUser: "User name",
     password: "Password",
     btnLogin: "Log in",
-    btnRegister: "Register"
+    btnRegister: "Register",
+    valEmail: "The email you entered is invalid!",
+    valEmail2: "Wrong email!",
+    valPass: "The entered password is not correct!",
+    valPss2: "The entered password is too short!"
 }
 
 export const headerEng: Header = {
