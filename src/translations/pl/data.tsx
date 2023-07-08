@@ -135,7 +135,7 @@ interface Register {
 
 export const RegisterSectionPl: Register = {
     loginText: "Załóż konto:",
-    nameUser: "Nazwa użytkownika",
+    nameUser: "Email użytkownika",
     password: "Hasło",
     btnLogin: "Zaloguj",
     btnRegister: "Załóż konto",
@@ -144,7 +144,7 @@ export const RegisterSectionPl: Register = {
 
 export const loginSectionPl: login = {
     loginText: "Zaloguj się:",
-    nameUser: "Nazwa użytkownika",
+    nameUser: "Email użytkownika",
     password: "Hasło",
     btnLogin: "Zaloguj",
     btnRegister: "Załóż konto",

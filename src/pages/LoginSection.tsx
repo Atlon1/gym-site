@@ -74,7 +74,7 @@ const LoginSection = () => {
     }
 
     return (
-        <section className='bg-neutral-500 h-[800px] ' id='login'>
+        <section className='bg-neutral-500 h-[900px] ' id='login'>
             <div
                 data-aos='fade-down'
                 data-aos-offset='200'

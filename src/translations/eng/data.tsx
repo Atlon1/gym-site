@@ -133,7 +133,7 @@ interface Register {
 
 export const RegisterSectionEng: Register = {
     loginText: "Register:",
-    nameUser: "User name",
+    nameUser: "User email",
     password: "Password",
     btnLogin: "Log in",
     btnRegister: "Register",
@@ -142,7 +142,7 @@ export const RegisterSectionEng: Register = {
 
 export const loginSectionEng: login = {
     loginText: "Log in:",
-    nameUser: "User name",
+    nameUser: "User Email",
     password: "Password",
     btnLogin: "Log in",
     btnRegister: "Register",
