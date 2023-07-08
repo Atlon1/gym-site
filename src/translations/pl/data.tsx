@@ -131,6 +131,13 @@ interface Register {
     btnLogin: string;
     btnRegister: string;
     rptPass: string;
+    valEmail: string;
+    valEmail2: string;
+    valPass: string;
+    valPss2: string;
+    valRptPass: string
+    valRptPass2: string
+    valRptPass3: string
 }
 
 export const RegisterSectionPl: Register = {
@@ -139,7 +146,14 @@ export const RegisterSectionPl: Register = {
     password: "Hasło",
     btnLogin: "Zaloguj",
     btnRegister: "Załóż konto",
-    rptPass: "Powtórz hasło"
+    rptPass: "Powtórz hasło",
+    valEmail: "Podany emial jest nie prawidłowy!",
+    valEmail2: "Zły email!",
+    valPass: "Podane hasło jest nie prawidłowe!",
+    valPss2: "Podane hasło jest za krótkie!",
+    valRptPass: "Podane hasło jest nie prawidłowe!",
+    valRptPass2: "Podane hasło jest za krótkie!",
+    valRptPass3: 'The passwords are not identical!'
 }
 
 export const loginSectionPl: login = {

@@ -129,6 +129,13 @@ interface Register {
     btnLogin: string;
     btnRegister: string;
     rptPass: string;
+    valEmail: string;
+    valEmail2: string;
+    valPass: string;
+    valPss2: string;
+    valRptPass: string
+    valRptPass2: string
+    valRptPass3: string
 }
 
 export const RegisterSectionEng: Register = {
@@ -137,7 +144,14 @@ export const RegisterSectionEng: Register = {
     password: "Password",
     btnLogin: "Log in",
     btnRegister: "Register",
-    rptPass: "Repeat Password"
+    rptPass: "Repeat Password",
+    valEmail: "The email you entered is invalid!",
+    valEmail2: "Wrong email!",
+    valPass: "The entered password is not correct!",
+    valPss2: "The entered password is not correct!",
+    valRptPass: "The entered password is not correct!",
+    valRptPass2: "The entered password is not correct!",
+    valRptPass3: ''
 }
 
 export const loginSectionEng: login = {

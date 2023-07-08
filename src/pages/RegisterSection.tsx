@@ -17,7 +17,14 @@ const RegisterSection = () => {
         password,
         btnLogin,
         btnRegister,
-        rptPass
+        rptPass,
+        valEmail,
+        valEmail2,
+        valPass,
+        valPss2,
+        valRptPass,
+        valRptPass2,
+        valRptPass3
     } = localStorage.getItem("lang") === 'pl' ? RegisterSectionPl : RegisterSectionEng
 
     const [form, setForm] = useState<RegisterForm>({
@@ -28,29 +35,29 @@ const RegisterSection = () => {
 
     const validateEmail = (form: RegisterForm) => {
         if (!form.email) {
-            return "Email nie może być pusty!"
+            return `${valEmail}`
         } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(form.email)) {
-            return 'Emial jest nie prawidłowy'
+            return `${valEmail2}`
         } else return null
     }
 
     const validatePassword = (form: RegisterForm) => {
         if (!form.password) {
-            return "Podane hasło jest nie prawidłowe!"
+            return `${valPass}`
         } else if (form.password.length < 6) {
-            return "Podane hasło jest za krótkie!"
+            return `${valPss2}`
         }
         return null
     }
 
     const validateRePassword = (form: RegisterForm) => {
         if (!form.password) {
-            return "Podane hasło jest nie prawidłowe!"
+            return `${valRptPass}`
         } else if (form.password.length < 6) {
-            return "Podane hasło jest za krótkie!"
+            return `${valRptPass2}`
         }
         if (form.repPassword !== form.password) {
-            return 'Hasła nie są identyczne'
+            return `${valRptPass3}`
         }
         return null
     }
