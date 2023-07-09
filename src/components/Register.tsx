@@ -88,7 +88,6 @@ const Register = () => {
         }
     }
 
-
     return (
         <section className='bg-neutral-500 h-[900px] ' id='login'>
             <div
