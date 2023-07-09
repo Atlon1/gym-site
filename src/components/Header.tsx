@@ -75,8 +75,8 @@ const Header = () => {
             </Link>
             <Nav/>
             <div className='hidden lg:flex space-x-4'>
-                <button className='btn btn-sm text-white hover:text-primary-200 transition'><Link to="/my-gym/login">{btnLoginText}</Link></button>
-                <button className='btn btn-sm btn-primary'><Link to="/my-gym/register">{btnSignupText}</Link></button>
+                <button className='btn btn-sm text-white hover:text-primary-200 transition'><Link to="/gym-site/login">{btnLoginText}</Link></button>
+                <button className='btn btn-sm btn-primary'><Link to="/gym-site/register">{btnSignupText}</Link></button>
                 <div className='flex flex-col'>
                     <button
                         className={`${langActive ? "text-gray-500" : "bg-neutral-500 text-white"} px-5 rounded-full hover:bg-neutral-300 duration-500`}

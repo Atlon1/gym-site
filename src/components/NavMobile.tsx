@@ -67,7 +67,7 @@ const NavMobile: FC<NavMobileProps> = ({navMobile}) => {
                 })}
             </ul>
             <div className='-mt-44 flex justify-center gap-x-8'>
-                <button className='btn btn-lg text-white'><Link to='/my-gym/login'>{btnLoginText}</Link></button>
+                <button className='btn btn-lg text-white'><Link to='/gym-site/login'>{btnLoginText}</Link></button>
                 <button className='btn btn-lg btn-primary'>{btnSignupText}</button>
                 <div className='flex flex-col'>
                     <button
