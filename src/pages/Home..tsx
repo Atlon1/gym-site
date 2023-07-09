@@ -6,11 +6,13 @@ import Pricing from "../components/Pricing";
 import Community from "../components/Community";
 import Faq from "../components/Faq";
 import Join from "../components/Join";
+import Header from "../components/Header";
 
 
 const Home = () => {
     return (
         <div>
+            <Header/>
             <Banner />
             <About />
             <Workouts />
