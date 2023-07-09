@@ -17,9 +17,9 @@ const App = () => {
         <div className='max-w-[1440px] mx-auto bg-page overflow-hidden relative'>
 
             <Routes>
-                <Route path='/my-gym' element={<Home/>}/>
-                <Route path='/my-gym/login' element={<LoginSection/>}/>
-                <Route path='/my-gym/register' element={<RegisterSection/>}/>
+                <Route path='/gym-site' element={<Home/>}/>
+                <Route path='/gym-site/login' element={<LoginSection/>}/>
+                <Route path='/gym-site/register' element={<RegisterSection/>}/>
             </Routes>
             <ArrowUp/>
             <Footer/>
