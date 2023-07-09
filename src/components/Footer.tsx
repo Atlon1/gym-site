@@ -13,7 +13,7 @@ const Footer = () => {
                  data-aos-offset='200'
                  data-aos-delay='200'
             >
-                <a href='#'>
+                <a href='/gym-site'>
                     <img src={logo} alt='logo'/>
                 </a>
                 <a href='#' className='lg:max-w-[175px] max-w-[150px]'>

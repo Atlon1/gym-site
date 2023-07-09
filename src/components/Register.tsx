@@ -127,7 +127,7 @@ const Register = () => {
                                 onClick={handleSubmit}
                         >{btnRegister}</button>
                         <button className='btn btn-sm lg:btn-lg btn-secondary'><Link
-                            to='/my-gym/login'>{btnLogin}</Link></button>
+                            to='/gym-site/login'>{btnLogin}</Link></button>
                     </div>
                 </div>
             </div>

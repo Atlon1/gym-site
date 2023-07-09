@@ -108,7 +108,7 @@ const Login = () => {
                             onClick={handleSubmit}
                         >{btnLogin}</button>
                         <button className='btn btn-sm lg:btn-lg btn-secondary'><Link
-                            to='/my-gym/register'>{btnRegister}</Link></button>
+                            to='/gym-site/register'>{btnRegister}</Link></button>
                     </div>
                 </div>
             </div>
