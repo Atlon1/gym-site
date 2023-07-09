@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/gym-site/static/css/main.0bca5a47.css",
-    "main.js": "/gym-site/static/js/main.0108675d.js",
+    "main.js": "/gym-site/static/js/main.6b9fe563.js",
     "static/media/bg.png": "/gym-site/static/media/bg.aa9add829b9ddaab15ca.png",
     "static/media/woman.png": "/gym-site/static/media/woman.afe487a6399eecfa1aa7.png",
     "static/media/img4.png": "/gym-site/static/media/img4.3f2b41a180f0b0e9b539.png",
@@ -28,10 +28,10 @@
     "index.html": "/gym-site/index.html",
     "static/media/index.cjs": "/gym-site/static/media/index.cd351d7c31d0d3fccf96.cjs",
     "main.0bca5a47.css.map": "/gym-site/static/css/main.0bca5a47.css.map",
-    "main.0108675d.js.map": "/gym-site/static/js/main.0108675d.js.map"
+    "main.6b9fe563.js.map": "/gym-site/static/js/main.6b9fe563.js.map"
   },
   "entrypoints": [
     "static/css/main.0bca5a47.css",
-    "static/js/main.0108675d.js"
+    "static/js/main.6b9fe563.js"
   ]
 }
