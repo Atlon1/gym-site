@@ -1,22 +1,23 @@
-# cra-template-tailwindcss-typescript
+#Gym site.
+This website is dedicated to a healthy lifestyle. It consists of 6 sections where you can find information on various topics, including the cost of membership, types of workouts, an FAQ section, and access to an individual portal login.
 
-A streamlined [Tailwind CSS v3.1](https://tailwindcss.com) template for [Create React App](https://github.com/facebook/create-react-app) in [TypeScript](https://www.typescriptlang.org/).
 
-> This template installs and sets up [Tailwind CSS](https://tailwindcss.com) with TypeScript support.
+#Features
+- Responsive design
+- Props validations
+- React Scroll
+- React Switch
+- Accordion
+- Validations on formulas
+- Multi-lang section's
+- Animations
 
-## Usage
 
-```bash
-npx create-react-app --template tailwindcss-typescript
-```
 
-## Credits
-
-This project was made possible thanks to the following projects.
-
-1. [GeoffSelby/cra-template-tailwindcss](https://github.com/GeoffSelby/cra-template-tailwindcss) - A streamlined Tailwind CSS template for Create React App (in JavaScript).
-2. [cra-template-typescript](https://github.com/facebook/create-react-app/tree/master/packages/cra-template-typescript) - An official TypeScript template for create-react-app.
-
-## License
-
-MIT © [Sung M. Kim](https://sung.codes)
+#Technologies
+- Tailwind css
+- RWD
+- Typescript
+- React: react-router
+- Data Typescript
+- Local storage.

@@ -65,7 +65,7 @@ const HeaderLogin = () => {
         <header className={`${isActive ? 'bg-neutral-500 py-[16px]' : 'bg-transparent py-[20px]'}
          fixed max-w-[1440px] z-30 left-0 right-0
          mx-auto flex justify-between items-center px-[20px] lg:px-[80px] transition-all duration-300`}>
-            <Link to='/my-gym'>
+            <Link to='/gym-site'>
                 <img className='h-[30px]'
                      src={logo} alt='LogoDisc'/>
             </Link>
